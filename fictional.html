@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="fictional.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Product</title>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+        <div class="gallery">
+            <img src="ring1.webp" width="400px" height="400px"  id="productimg" >
+            <div class="controls">
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+        </div>
+        <div class="details">
+            <h1>streling silver Ring</h1>
+            <h2>$15.00</h2>
+            <h3>30% OFF</h3>
+            <p>Best disigning Ring and easy to maintain </p>
+            <form>
+                <div class="size-sel">
+                   <p>Size</p> 
+                   <label for="7">
+                       <input type="radio" name="size" id="7">
+                       <span>7</span>
+                   </label>
+                   <label for="8">
+                       <input type="radio" name="size" id="8">
+                       <span>9</span>
+                   </label>
+                   <label for="9">
+                       <input type="radio" name="size" id="9">
+                       <span>8</span>
+                    </label>
+                   <label for="10">
+                       <input type="radio" name="size" id="10">
+                       <span>10</span>
+                    </label>
+                    <label for="11">
+                       <input type="radio" name="size" id="11">
+                       <span>11</span>
+                    </label>
+                </div>
+                <div class="quan">
+                    <p>Quatity</p>
+                    <input type="number" value="1">
+
+                </div>
+                <button>BUY NOW</button>
+            </form>
+            
+        </div>
+        </div>
+    </div>
+  <script>
+     let productimg = document.getElementById("productimg");
+     let btn=document.getElementsByClassName("btn");
+
+     btn[0].onclick=function()
+     {
+        productimg.src="ring1.webp";
+     }
+     
+     btn[1].onclick=function()
+     {
+        productimg.src="ring 2.webp";
+     }
+     
+     btn[2].onclick=function()
+     {
+        productimg.src="ring 3.webp";
+     }
+  </script>
+</body>
+</html>
